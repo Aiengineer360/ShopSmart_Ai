@@ -21,17 +21,16 @@ It leverages user interaction data and machine learning to suggest products cust
 
 ---
 
-## 🛠️ Tech Stack
+## 🔬 Technical Deep Dive
 
-| 🧰 Tool / Library | 🔍 Purpose |
-|------------------|------------|
-| `Python`         | Programming language |
-| `Pandas`         | Data analysis & manipulation |
-| `NumPy`          | Numerical computing |
-| `Matplotlib`     | Data visualization |
-| `Seaborn`        | Advanced plotting |
-| `Scikit-learn`   | Machine learning algorithms |
-| `Jupyter Notebook` | Interactive coding environment |
+| ⚙️ Component             | 🧩 Summary |
+|-------------------------|-----------|
+| **Crew-AI**             | 🧑‍🏭 Specialized agents (search, review, analysis) with automatic context sharing and flexible workflows. |
+| **Google Gemini**       | 📊 Chosen over GPT-4/Claude-3 for valid JSON output, local platform awareness (e.g., Daraz), and strong multi-turn reasoning. |
+| **RAG Pipeline**        | 🗂️ 3-layer system: review scraping, vector embeddings (`text-embedding-004`), and Gemini-based summarization with sentiment. |
+| **Voice Interface**     | 🔊 Fast stack with audio pre-processing, intent parsing, and ~500ms P99 latency. |
+| **Deployment**          | 🖥️ Streamlit frontend + Crew-AI + Gemini backend; hosted on Render with auto-scaling. Live at: `ShopSmart.Ai` |
+
 
 ---
 
